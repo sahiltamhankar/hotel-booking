@@ -9,6 +9,6 @@ const userSchema = new mongoose.Schema({
     recentSearchCities: [{ type: String, required: true }],
 }, {timestamps: true})
 
-const userModel = mongoose.mmodel('user', userSchema)
+const User = mongoose.model("User", userSchema)
 
-export default userModel
+export default User

@@ -1,5 +1,5 @@
 import User from '../models/user.js'
-import { messageInRaw, Webhook } from 'svix'
+import { Webhook } from 'svix'
 
 const clerkWebhooks = async (req, res) => {
     try {
@@ -46,7 +46,7 @@ const clerkWebhooks = async (req, res) => {
             default:
                 break;
         }
-        res.json({success: true, message: "Webhook REcieved"})
+        res.json({success: true, message: "Webhook Recieved"})
 
     } catch (error) {
         console.log(error.message)
